@@ -32,5 +32,34 @@ namespace pract12
             //circle.AreaAllRinga(circle1);
 
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Result_Click(object sender, RoutedEventArgs e)
+        {
+             
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ResultCenuty_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result;
+            result = MessageBox.Show("maybe u don't want?","Вопрос", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    MessageBox.Show("u are gey");
+                }
+            }
+            
+        }
     }
 }

@@ -6,7 +6,63 @@
         xmlns:local="clr-namespace:pract12"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Black">
+        <TabControl>
+            <TabItem Header="Circle">
+                <Grid Background="Black">
+                    <GroupBox Header="Settings" Foreground="White"
+                              Height="150"
+                              Width="300"
+                              VerticalAlignment="Top" 
+                              HorizontalAlignment="Left">
+                        <Grid>
+                            <Label Content="First radius -" Foreground="White" Margin="0,0,211,102"></Label>
+                            <Label Content="Second radius -" Foreground="White" Margin="0,25,189,76"></Label>
+                            <TextBox x:Name="FirstRadiusTB"
+                                 Height="20" Width="80" 
+                                 Margin="104,5,104,102" Foreground="White" BorderThickness="0,0,0,1" BorderBrush="White" Background="Black"></TextBox>
+                            <TextBox x:Name="SecondRadiusTB"
+                                Height="20" Width="80" 
+                                Margin="104,30,104,77" Background="Black" BorderBrush="White" BorderThickness="0,0,0,1"/>
+                            <Label Content="Midle - " VerticalContentAlignment="Center" Foreground="White" Margin="0,51,241,51"/>
+                            <TextBox x:Name="MidleTB"
+                                Height="20" Width="80" 
+                                Margin="104,56,104,51" Background="Black"
+                                     BorderBrush="White" 
+                                     BorderThickness="0,0,0,1"/>
+                            <Expander Header=" Open me :)" Foreground="White" Margin="0,81,0,0">
+                                <Grid>
+                                    <Button x:Name="Result" Content="Result" ToolTip="Button for outputing results"
+                                            Click="Result_Click" HorizontalAlignment="Left" Width="41" Background="Black" Foreground="White" BorderBrush="Gray" BorderThickness="0,0,0,1" FontWeight="Bold"></Button>
+                                    <Button x:Name="Exit" Content="Exit" ToolTip="Button for exit programm" Click="Exit_Click" Width="41" Margin="46,0,199,0" Background="Black" Foreground="White" BorderThickness="0,0,0,1" FontWeight="Bold"></Button>
+                                    <Button x:Name="AboutMe" Content="About me" ToolTip="Button for open task and dev " Click="About_Click" Margin="92,0,130,0" Background="Black" Foreground="#FFF9F9F9" BorderThickness="0,0,0,1" FontWeight="Bold"/>
+
+
+                                </Grid>
+
+                            </Expander>
+
+
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="FindCentury">
+                <Grid Background="Black">
+                    <GroupBox Header="Find" Foreground="White" Width="200" Height="200" Margin="10,10,584,196">
+                        <Grid>
+                            <Button Background="Black" Foreground="White" Content="Click me" Margin="10,63,124,88" BorderThickness="0,0,0,1" Click="ResultCenuty_Click"></Button>
+                            <Label Content="Input year" Foreground="White" Margin="0,12,115,139"></Label>
+                            <Label Content="Your century" Foreground="White" Margin="0,141,105,10"></Label>
+                            <TextBox x:Name="YearTB" Height="30" Width="100" Margin="88,1,0,146" Background="Black" Foreground="White" BorderBrush="White" BorderThickness="0,0,0,1"></TextBox>
+                            <TextBox x:Name="CenturyTB" Height="30" Width="100" Margin="88,130,0,17" Background="Black" Foreground="White" BorderBrush="White" BorderThickness="0,0,0,1"/>
+                        </Grid>
+                    </GroupBox>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
 
     </Grid>
 </Window>
