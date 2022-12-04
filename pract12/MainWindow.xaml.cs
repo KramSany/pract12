@@ -56,7 +56,7 @@ namespace pract12
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    MessageBox.Show("u are gey");
+                    MessageBox.Show("u are gey"); 
                 }
             }
             
