@@ -1,11 +1,11 @@
-﻿<Window x:Class="pract12.MainWindow"
+﻿<Window x:Class="pract12.MainWindow" ResizeMode="CanMinimize"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pract12"
         mc:Ignorable="d"
-        Title="pract12" Height="560" Width="500">
+        Title="pract12" Height="560" Width="500" Icon="/merge_cells16_h.bmp">
     <Grid Background="Gray">
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"/>
@@ -33,7 +33,7 @@
             <TabItem Header="Circle">
 
                 <Grid Background="Black">
-                    <GroupBox Header="Results" Foreground="White" Margin="0,155,194,161">
+                    <GroupBox Header="Results" Foreground="White" Margin="0,155,177,161">
                         <StackPanel>
                             <Label Content="Answer" Foreground="White"></Label>
                             <TextBox IsReadOnly="true" x:Name="resultTBCircle" Background="Black" Foreground="White" BorderThickness="0,0,0,1" Height="56"/>
@@ -50,10 +50,10 @@
                             <Label Content="Circle2 -" Foreground="White" Margin="0,25,189,76"></Label>
                             <TextBox x:Name="FirstRadiusTB"
                                  Height="20" Width="80" 
-                                 Margin="104,5,104,102" Foreground="White" BorderThickness="0,0,0,1" BorderBrush="White" Background="Black"></TextBox>
+                                 Margin="104,5,104,102" Foreground="White" BorderThickness="0,0,0,1" BorderBrush="White" Background="Black" TextChanged="TextBoxInCircle_TextChanged"></TextBox>
                             <TextBox x:Name="SecondRadiusTB"
                                 Height="20" Width="80" 
-                                Margin="104,30,104,77" Background="Black" BorderBrush="White" BorderThickness="0,0,0,1" Foreground="White"/>
+                                Margin="104,30,104,77" Background="Black" BorderBrush="White" BorderThickness="0,0,0,1" Foreground="White" TextChanged="TextBoxInCircle_TextChanged"/>
                             <Expander Header=" Open me :)" Foreground="White" Margin="0,81,0,0">
                                 <Grid>
                                     <Button x:Name="Result" Content="Result" ToolTip="Button for outputing results"
@@ -72,12 +72,12 @@
                         <StackPanel>
                             <Label Content="Input year" Foreground="White"></Label>
                             <Separator Width="0"/>
-                            <TextBox x:Name="YearTB" HorizontalAlignment="Left" Height="21" Width="100" Background="Black" Foreground="White" BorderBrush="White" BorderThickness="0,0,0,1"></TextBox>
+                            <TextBox x:Name="YearTB" HorizontalAlignment="Left" Height="21" Width="100" Background="Black" Foreground="White" BorderBrush="White" BorderThickness="0,0,0,1" TextChanged="TextBoxInFindCentury_TextChanged"></TextBox>
                             <Separator Width="0"/>
                             <Button Background="Black" Foreground="White" Content="Click me"  BorderThickness="0,0,0,1" Click="ResultCenuty_Click"></Button>
                         </StackPanel>
                     </GroupBox>
-                    <GroupBox Header="Results" Height="100" Foreground="White" Margin="8,231,286,112">
+                    <GroupBox Header="Results" Height="100" Foreground="White" Margin="0,220,276,112">
                         <StackPanel>
                             <Label Content="Answer" Foreground="White"></Label>
                             <Separator Width="0"/>

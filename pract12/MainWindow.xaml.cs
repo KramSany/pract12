@@ -73,5 +73,15 @@ namespace pract12
             tbDate.Text = dateTime.ToString("dd.MM.yyyy");
             tbTask.Text = "Практическая 12. Вариант 8";
         }
+
+        private void TextBoxInCircle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            resultTBCircle.Clear();
+        }
+
+        private void TextBoxInFindCentury_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            resultTBFindCentury.Clear();
+        }
     }
 }
